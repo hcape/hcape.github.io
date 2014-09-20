@@ -84,7 +84,7 @@ sub {
   bottom: -.25em;
 }
 img {
-  border: 0;
+  border: none;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -910,12 +910,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #8A5C2E;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #8A5C2E;
   text-decoration: underline;
 }
 a:focus {
@@ -928,6 +928,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  
 }
 .img-responsive,
 .thumbnail > img,
@@ -938,7 +939,9 @@ img {
   width: 100% \9;
   max-width: 100%;
   height: auto;
+
 }
+
 .img-rounded {
   border-radius: 6px;
 }
@@ -1153,10 +1156,10 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #428bca;
+  color: #8A5C2E;
 }
 a.text-primary:hover {
-  color: #3071a9;
+  color: #8A5C2E;
 }
 .text-success {
   color: #3c763d;
