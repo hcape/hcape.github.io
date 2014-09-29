@@ -945,6 +945,12 @@ img {
 
 }
 
+.img-responsivee{
+
+opacity:0.2;
+
+}
+
 .img-rounded {
   border-radius: 6px;
 }
