@@ -44,10 +44,12 @@ template {
 }
 a {
   background: transparent;
+  color:#8A5C2E;
 }
 a:active,
 a:hover {
   outline: 0;
+  color:#8A5C2E;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -198,6 +200,7 @@ th {
   a,
   a:visited {
     text-decoration: underline;
+    color:#8A5C2E;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -1085,7 +1088,11 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+  color:#8A5C2E;
 }
+
+
+
 h3,
 .h3 {
   font-size: 24px;
