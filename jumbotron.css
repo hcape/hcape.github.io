@@ -14,41 +14,37 @@
 	width:120px;
 	height:24px;
 	margin: 300px auto;
-         -webkit-animation: fadeout 0.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeout 0.5s; /* Firefox < 16 */
-        -ms-animation: fadeout 0.5s; /* Internet Explorer */
-         -o-animation: fadeout 0.5s; /* Opera < 12.1 */
-            animation: fadeout 0.5s;
+
 
 }
 
 @keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 
@@ -143,7 +139,9 @@ color:#1E2B1E;
 
 
 
-body {
+notloading {             
+
+
 
 }
 
