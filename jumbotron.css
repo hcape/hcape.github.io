@@ -77,7 +77,7 @@ span.introvic{
 a.swag
 {
 
-    background-color:rgb(74, 136, 136);
+    background-color:rgb(213, 131, 96);
     color:antiquewhite;
    font-family: 'Lato', sans-serif;
     font-weight:100;
@@ -137,6 +137,8 @@ color:#1E2B1E;
     background-image: url("images/tron1.jpg");
     background-size:cover;
     height:38vw;
+    box-shadow: 0px 10px 25px 0px darkslategrey;
+    
 }
 
 .introo{
@@ -192,8 +194,8 @@ p.intro{
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-image: url(images/tron2.jpg);
-    background-size: cover;
+  background-image: url(images/tron3.jpg);
+    background-size:cover;
     background-color: rgb(69, 157, 203);
 
     
@@ -232,5 +234,12 @@ background-color: darkslategrey;
     
 }
 
+.get {
+	display:;
+}
 
-
+#diagram {
+	float:left;
+	width:600px;
+	height:600px;
+}
