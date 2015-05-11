@@ -19,7 +19,9 @@
 }
 
 
-
+section.me{
+    background-color:lightcyan;
+}
 
 .row{
     padding-top: 60px;
@@ -37,17 +39,17 @@
 }
 
 .aboutme{
-    
-padding-top: 35px;
+
 text-align: center;
 
 }
 
 h1.gay{
     font-family: 'Pacifico', cursive;
-    color:#1E2B1E;
+    color:whitesmoke;
     margin-top: 15%;
-    
+    font-size:78px;
+     text-shadow: -1.5px 0 #2C6262, 0 1.5px #2C6262, 1.5px 0 #2C6262, 0 -1.5px #2C6262;
    text-align: center;
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
@@ -55,14 +57,22 @@ h1.gay{
     -ms-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in; 
 }
+
+h1:hover{
+    
+ color:#2C6262;
+    text-shadow: -1.5px 0 antiquewhite, 0 1.5px antiquewhite, 1.5px 0 antiquewhite, 0 -1.5px antiquewhite;
+     
+}
 span.introo{
+    padding-top: 20px;
          text-shadow: -1.5px 0 #2C6262, 0 1.5px #2C6262, 1.5px 0 #2C6262, 0 -1.5px #2C6262;
-        font-size:24px;
+        font-size:30px;
 
 }
 span.introvic{
          text-shadow: -1.5px 0 #2C6262, 0 1.5px #2C6262, 1.5px 0 #2C6262, 0 -1.5px #2C6262;
-        font-size: 20px;
+        font-size: 26px;
 }
 a.swag
 {
@@ -153,7 +163,6 @@ color:#1E2B1E;
 .jumbotron{
     background-image: url("images/tron1.jpg");
     background-size:cover;
-    box-shadow:0px 0px 100px 30px #002549;
     height:35vw;
 }
 
@@ -161,14 +170,7 @@ color:#1E2B1E;
 height:35vw;
 }
 
-h1:hover{
-    
- color:antiquewhite;
-    text-shadow: -1.5px 0 #2C6262, 0 1.5px #2C6262, 1.5px 0 #2C6262, 0 -1.5px #2C6262;
-    
 
-
-}
 p{
     color:darkslategray;
     
