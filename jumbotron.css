@@ -260,15 +260,26 @@ ul
     list-style-type: none;
 }
 li{
-  
+  width:100px;
   clear: both;
   line-height: 35px;
-  color: antiquewhite;
+  color: white;
   margin-bottom: 1px;
   font-size: 18px;
 }
 
 li.C{
-background: darkslategrey;
-    
+background: #BEDBE9;
+}
+li.Java{
+    background: #FFD699;
+}
+li.Python{
+    background: #88B8E6;
+}
+li.HC{
+background: #003D5C;
+}
+li.blank{
+    background: rgb(213, 131, 96);
 }
