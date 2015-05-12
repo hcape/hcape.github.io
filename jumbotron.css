@@ -1,4 +1,6 @@
 
+
+
 #load_screen{
 	background: #000;
 	opacity: 1;
@@ -17,10 +19,12 @@
 }
 body{
  background-color: rgb(234, 255, 255);
+    
 }
 
 section.me{
     background-color:rgb(234, 255, 255);
+    height:350px;
 }
 
 .row{
@@ -33,7 +37,7 @@ section.me{
 
 .col-md-3{
     
-    height: 500px;
+    height: 300px;
     width:300px;
       
 }
@@ -235,11 +239,36 @@ background-color: darkslategrey;
 }
 
 .get {
-	display:;
+	display:none;
 }
 
 #diagram {
 	float:left;
 	width:600px;
 	height:600px;
+}
+
+.skilllist{
+
+margin-top: 50%
+
+    
+}
+
+ul
+{
+    list-style-type: none;
+}
+li{
+  
+  clear: both;
+  line-height: 35px;
+  color: antiquewhite;
+  margin-bottom: 1px;
+  font-size: 18px;
+}
+
+li.C{
+background: darkslategrey;
+    
 }
