@@ -18,17 +18,20 @@
 	margin: 300px auto;
 }
 body{
- background-color: rgb(234, 255, 255);
+ background-image:url(images/gplaypattern.png);
+background-repeat: repeat;
     
 }
 
 section.me{
-    background-color:rgb(234, 255, 255);
-    height:350px;
+    height:300px;
 }
 
 .row{
     padding-top: 60px;
+    width: 900px;
+    margin-left:25px;
+    padding-right: 0px;
 }
 .progress{
 
@@ -38,15 +41,9 @@ section.me{
 .col-md-3{
     
     height: 300px;
-    width:300px;
-      
+    width:300px;  
 }
 
-.aboutme{
-
-text-align: center;
-
-}
 
 h1.gay{
     font-family: 'Pacifico', cursive;
@@ -81,8 +78,8 @@ span.introvic{
 a.swag
 {
 
-    background-color:rgb(213, 131, 96);
-    color:antiquewhite;
+    background-color:#FA9D5A;
+    color:white;
    font-family: 'Lato', sans-serif;
     font-weight:100;
         -webkit-transition: all 0.2s ease-in;
@@ -119,7 +116,7 @@ font-size: 24px;
 
 a.swag:hover{
 
-    opacity: 0.8;
+opacity: 0.8;
 background-color:white ;
 color:#1E2B1E;
   
@@ -149,9 +146,20 @@ color:#1E2B1E;
 height:30vw;
 }
 
+p.about{
+ opacity:0;
+     font-size:20px;
+}
 
-p{
-    color:darkslategray; 
+p.about:hover{
+    opacity:1;
+    color:#FA9D5A; 
+    font-size: 24px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; 
 }
 
 h2{
@@ -165,11 +173,34 @@ h2{
     
 }
 
-.art{
+#box:hover{
+    opacity:0.5;
     background-color: white;
-    
-    box-shadow: 3px 3px 3px darkslategray;
+    border: 4px solid #FA9D5A;
+    height:300px;
+    color:#FA9D5A;
 }
+
+.infobutton{
+    width:200px;
+    height: 150px;
+    float:left;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #FA9D5A;
+    border: 2px solid white;
+    text-align: center;
+    height:100px;
+    color:white;
+    box-shadow: 0px 0px 1px darkslategray;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; 
+}
+
+
 
 h2:hover{
     
@@ -180,7 +211,7 @@ p.intro{
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-    color: antiquewhite;
+    color: white;
    
 }
 
@@ -223,7 +254,7 @@ p.intro{
 }
 
 .feet{
-background-color: darkslategrey;
+background-image: url(images/tron3.jpg)
     
 }
 #circle {
@@ -238,6 +269,8 @@ background-color: darkslategrey;
     
 }
 
+
+
 .get {
 	display:none;
 }
@@ -249,10 +282,7 @@ background-color: darkslategrey;
 }
 
 .skilllist{
-
-margin-top: 50%
-
-    
+margin-top: 50%   
 }
 
 ul
@@ -266,6 +296,11 @@ li{
   color: white;
   margin-bottom: 1px;
   font-size: 18px;
+    text-align: center;
+    text-shadow: -1.0px 0 #000, 0 1.0px #000, 1.0px 0 #000, 0 -1.0px #000;
+}
+li.tip{
+background: white;
 }
 
 li.C{
@@ -281,5 +316,5 @@ li.HC{
 background: #003D5C;
 }
 li.blank{
-    background: rgb(213, 131, 96);
+    background: #FA9D5A;
 }
