@@ -24,22 +24,20 @@ background-repeat: repeat;
 }
 
 section.me{
-    height:300px;
+    height:350px;
 }
 
 .row{
     padding-top: 0px;
     width: 900px;
-    margin-left:25px;
+    margin-left:130px;
     padding-right: 0px;
 }
 .progress{
-
  color: black;   
 }
 
 .col-md-3{
-    
     height: 300px;
     width:300px;  
 }
@@ -65,6 +63,28 @@ h1:hover{
     text-shadow: -1.5px 0 antiquewhite, 0 1.5px antiquewhite, 1.5px 0 antiquewhite, 0 -1.5px antiquewhite;
      
 }
+
+
+h2{
+    color:#2B9B9B;
+    font-family: 'Pacifico', cursive;
+        -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; 
+    padding-bottom: 0px;
+    text-align: center;
+        text-shadow: -1.5px 0 #2C6262, 0 1.5px #2C6262, 1.5px 0 #2C6262, 0 -1.5px #2C6262;
+    
+}
+
+
+h2:hover{
+    
+    color: ghostwhite;
+}
+
 span.introo{
     padding-top: 20px;
          text-shadow: -1.5px 0 #2C6262, 0 1.5px #2C6262, 1.5px 0 #2C6262, 0 -1.5px #2C6262;
@@ -89,10 +109,17 @@ a.swag
     transition: all 0.2s ease-in; 
     border-radius: 0;
     border-width: 2px;
-   border-color: darkslategray; 
+   border-color: ghostwhite; 
 }
 
 
+a.swag:hover{
+
+opacity: 0.8;
+background-color:white ;
+color:#1E2B1E;
+  
+}
 a.circle{
 
 
@@ -114,12 +141,10 @@ font-size: 24px;
        
 }
 
-a.swag:hover{
+.mepic{
 
-opacity: 0.8;
-background-color:white ;
-color:#1E2B1E;
-  
+    width: 100px;
+    height: auto;
 }
 
 @media (min-width:1200px){
@@ -148,34 +173,27 @@ height:30vw;
 
 p.about{
  opacity:0;
-     font-size:34px;
+     font-size:20px;
+            -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; 
 }
 
 p.about:hover{
-    opacity:1;
+    opacity:1.0;
     color:#FA9D5A; 
-    font-size: 18px;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in; 
+    font-size: 16px;
+  
+ 
 }
-
-h2{
-    color:#2B9B9B;
-    font-family: 'Pacifico', cursive;
-        -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in; 
-    padding-bottom: 0px;
-    
+p.about:hover>img, p.about>img{
+    width:120px;
 }
 
 #box:hover{
-    opacity:0.5;
+    opacity:0.9;
     background-color: white;
     border: 4px solid #FA9D5A;
     height:250px;
@@ -208,10 +226,6 @@ color: #FA9D5A;
 
 
 
-h2:hover{
-    
-    color: aliceblue;
-}
 
 p.intro{
     text-align: center;
