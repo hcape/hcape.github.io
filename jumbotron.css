@@ -28,7 +28,7 @@ section.me{
 }
 
 .row{
-    padding-top: 60px;
+    padding-top: 0px;
     width: 900px;
     margin-left:25px;
     padding-right: 0px;
@@ -148,13 +148,13 @@ height:30vw;
 
 p.about{
  opacity:0;
-     font-size:20px;
+     font-size:34px;
 }
 
 p.about:hover{
     opacity:1;
     color:#FA9D5A; 
-    font-size: 24px;
+    font-size: 18px;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -170,6 +170,7 @@ h2{
     -o-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; 
+    padding-bottom: 0px;
     
 }
 
@@ -177,10 +178,14 @@ h2{
     opacity:0.5;
     background-color: white;
     border: 4px solid #FA9D5A;
-    height:300px;
+    height:250px;
     color:#FA9D5A;
+    
 }
 
+a{
+color: #FA9D5A;
+}
 .infobutton{
     width:200px;
     height: 150px;
@@ -191,6 +196,7 @@ h2{
     border: 2px solid white;
     text-align: center;
     height:100px;
+    
     color:white;
     box-shadow: 0px 0px 1px darkslategray;
     -webkit-transition: all 0.2s ease-in;
