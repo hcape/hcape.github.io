@@ -2,12 +2,23 @@
 html,body{
   width:100%;
   height:100%;
-background: #fd746c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  
 }
+
+@media screen and (min-width: 875px) {
+    html,body{
+        background-image: url("succ.jpg");
+        background-size: 100%;/* fallback for old browsers */
+    }
+}
+
+@media screen and (max-width: 875px) {
+    html,body{
+        background-color: powderblue;
+    }
+}
+
+
 .box{
     padding-top:10%;
 }
@@ -31,6 +42,11 @@ span, p{
   font-family: 'Open Sans', cursive;
   font-size: 20px;
   margin: 10px 0 0 10px;
+  text-shadow:
+   -1px -1px 0 powderblue,  
+    1px -1px 0 powderblue,
+    -1px 1px 0 powderblue,
+     1px 1px 0 powderblue;
 
 }
 
