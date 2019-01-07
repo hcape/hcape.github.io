@@ -1,0 +1,196 @@
+$gray-800: #343a40;
+$gray-700: #495057;
+$body-bg: #210c95;
+$teal: #20c997;
+$white: #fff;
+$gray-200: #e9ecef;
+$green: #28a745;
+$gray-300: #dee2e6;
+$body-color: $gray-200;
+$orange: #fd7e14;
+$gray-500: #adb5bd;
+$text-muted: #85b0f2;
+$primary: #00CD9A;
+$primary-opaque: #1a077a;
+$link-color: #FFAB00;
+$spacer: 2rem;
+$enable-shadows: false;
+$enable-gradients: false;
+$border-radius: 0;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0;
+$warning: #FFC107;  
+$danger: #DC3545;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+p{
+    font-size:1.2rem;
+}
+
+.big{
+    padding: 150px 0px;
+    margin: 0px auto 100px;
+}
+
+@include media-breakpoint-up(xs) {
+    .responsive-header {
+      font-size: 3.2rem!important;
+    }
+    .responsive-header2 {
+        font-size: 1.8rem!important;
+      }
+    .responsive-font{
+        font-size:1.2rem!important;
+    }
+  }
+
+@include media-breakpoint-up(sm) {
+    .responsive-header {
+      font-size: 3.6rem!important;
+    }
+    .responsive-header2 {
+        font-size: 2.5rem!important;
+      }
+    .responsive-font{
+        font-size:1.5rem!important;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    .responsive-header {
+      font-size: 4.2rem!important;
+    }
+    .responsive-header2 {
+        font-size: 3rem!important;
+      }
+    .responsive-font{
+        font-size:1.6rem!important;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    .responsive-header {
+      font-size: 5rem!important;
+    }
+    .responsive-header2 {
+        font-size: 3.6rem!important;
+      }
+    .responsive-font{
+        font-size:2rem!important;
+    }
+  }
+
+.header-font{
+    font-family: 'Sarabun', sans-serif;
+}
+
+.code-font{
+    font-family: 'VT323', sans-serif;
+}
+
+.jobs{
+    overflow:scroll;
+    position: relative!important;
+    vertical-align: middle;
+    margin: auto!important;
+    display: flex!important;
+    flex-direction: row;
+}
+
+
+  @include media-breakpoint-up(lg) {
+    .container-special {
+        max-width: 690px!important;
+    }
+}
+
+.jobs > .btn{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+
+//Remove the dumb box shadow on radio click
+.btn:active,
+.btn:focus,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none!important;
+          box-shadow: none!important;
+}
+
+i{
+    font-size:1.5rem;
+    cursor:pointer;
+}
+
+i > .float-right{
+    float:right;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+ul li:before {
+    color:$primary;
+    content: '⌁ \0000a0';
+    font-weight: bold;
+}
+
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn-group > .btn-job:hover {
+      background-color:$primary;
+      border-bottom: 3px solid $primary;
+  }
+  .btn-group > .btn-job{
+      background-color:$body-bg;
+      color:$body-color;
+      border-bottom:3px solid $text-muted;
+  }
+
+  .btn-group > .active {
+      background-color:$primary;
+      border-bottom:3px solid $primary;
+  }
+
+  .project-block{
+    border-bottom:1px solid $text-muted;
+  }
+
+  .projects > .btn:hover {
+      background-color:$body-bg;
+      border-color: $text-muted;
+      color:$text-muted;
+      cursor:default!important;
+  }
+  .projects > .btn {
+    background-color:$body-bg;
+      border-color: $text-muted;
+      color:$text-muted;
+      cursor:default!important;
+}
+
+.projects > .card{
+    background-color:$primary-opaque;
+}

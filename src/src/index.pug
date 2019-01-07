@@ -1,0 +1,200 @@
+doctype html
+html(lang="pl")
+    head
+        title Heather Cape
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="Heather Cape - Software Engineering Portfolio")
+        meta(name="author" content="Heather Cape")
+        
+        link(href="css/bootstrap/bootstrap-theme.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Sarabun:600|VT323" rel="stylesheet")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
+
+    body
+        .container-fluid
+            section.big
+                .container
+                    h2.text-primary.code-font.text-left.mb-0 Hi, I am    
+                    h1.header-font.text-left.responsive-header Heather Cape.
+                    h1.text-muted.text-left.responsive-header2 I like to program stuff and make it look pretty
+                    p.text-muted.text-left.responsive-font.pt-3 Currently based in Seattle and working at Microsoft.
+                    a.btn.btn-outline-primary.btn-lg.my-2(href="href='hcaperesume2018.pdf'").text-left Resume
+
+               
+            section.py-5.big
+                .container
+                    h2.mb-5.text-center.responsive-header2 Here's Where I Worked
+                    .job-toggle.row.justify-content-center
+                        .col-10
+                            .wrapper.text-center
+                                .btn-group.jobs.btn-group-toggle(data-toggle='buttons')
+                                        label.btn.btn-lg.btn-job.active(onclick='getJob("microsoft")')
+                                            input(type='radio' checked) 
+                                            | Microsoft
+                                        label.btn.btn-lg.btn-job(onclick='getJob("coalition")')
+                                            input(type='radio') 
+                                            | The Coalition
+                                        label.btn.btn-lg.btn-job(onclick='getJob("verably")')
+                                            input(type='radio') 
+                                            | Verably
+                                        label.btn.btn-lg.btn-job(onclick='getJob("redbrick")')
+                                            input(type='radio') 
+                                            | Redbrick
+                                        label.btn.btn-lg.btn-job(onclick='getJob("isolation")')
+                                            input(type='radio') 
+                                            | Isolation Network
+                                        label.btn.btn-lg.btn-job(onclick='getJob("dynamics")')
+                                            input(type='radio') 
+                                            | General Dynamics
+                            .job-box.p-4
+                                h2#job-title.text-left.pl-1.text-primary
+                                h5#job-date.text-muted.pl-1.text-left
+                                ul
+                                    li#job-bullet1.text-left
+                                    li#job-bullet2.text-left
+            
+            
+            section.py-5.big
+                .container.text-center
+                    h2.mb-5.text-center.responsive-header2 Here's What I Built
+                    .row.pb-2.mb-4.justify-content-center
+                        .col-md-10
+                            .row
+                                .card-group
+                                    .col-md-6.mb-3.projects
+                                        .card.h-100
+                                            .card-body.p-3
+                                                i.text-muted.fas.fa-external-link-alt.float-right(onclick="location.href = 'http://www.antidose.ca'")
+                                                h2.card-title.text-primary.responsive-text Antidose
+                                                p.card-text Andoird app to address the opioid overdose crisis. It alerts naloxone carriers to nearby overdoses so they can provide assistance. Best UVic Software Capstone 2017  
+                                                    i.fas.fa-trophy.p-1.text-muted
+                                            .card-footer
+                                                .btn.btn-sm.btn-outline-primary Java
+                                                .btn.btn-sm.btn-outline-primary Go
+                                                .btn.btn-sm.btn-outline-primary PostgreSQL
+
+                                    .col-md-6.mb-3.projects
+                                        .card.h-100
+                                            .card-body.p-3
+                                                i.text-muted.fab.fa-github.float-right(onclick="location.href = 'https://github.com/moonshot-trading'")
+                                                h2.card-title.text-primary.responsive-text Moonshot Trading
+                                                p.card-text Simulated stock trading system with a distributed systems focus. Reached over 12000 transactions per second in an offline network. Included 4 different types of servers and robust audit logging. 
+                                            .card-footer
+                                                .btn.btn-sm.btn-outline-primary Go
+                                                .btn.btn-sm.btn-outline-primary PostgreSQL
+                                                .btn.btn-sm.btn-outline-primary Redis
+                                                .btn.btn-sm.btn-outline-primary Docker
+
+                                    .col-md-6.mb-3.projects
+                                        .card.h-100
+                                            .card-body.p-3
+                                                i.text-muted.fab.fa-github.float-right(onclick="location.href = 'https://github.com/BoyangJ/iambelle'")
+                                                h2.card-title.text-primary.responsive-text I Am Belle
+                                                p.card-text Friendly AI Twitterbot that uses Photo AI to compliment user on their pictures. Hardware component that lights up hearts after any tweet is made. Winner of HackUvic 2017 
+                                                    i.fas.fa-trophy.text-muted.p-1
+                                            .card-footer
+                                                .btn.btn-sm.btn-outline-primary Python
+                                                .btn.btn-sm.btn-outline-primary HTML/CSS
+                                                .btn.btn-sm.btn-outline-primary Clarifai
+                                    
+                                    .col-md-6.mb-3.projects
+                                        .card.h-100
+                                            .card-body.p-3
+                                                i.text-muted.fas.fa-external-link-alt.float-right(onclick="location.href = 'https://clarifly-server.herokuapp.com'")
+                                                i.text-muted.fab.fa-github.float-right.pr-1(onclick="location.href = 'https://clarifly-server.herokuapp.com'")
+                                                h2.card-title.text-primary.responsive-text Clarifly
+                                                p.card-text A platform that allows teachers to create a digital room that students can join and post questions in during lectures. Students can upvote questions that they like, and the teacher can can see which topics need the most attentnions. Includes a profanity filter, of course.
+                                            .card-footer
+                                                .btn.btn-sm.btn-outline-primary VueJs
+                                                .btn.btn-sm.btn-outline-primary HTML/CSS
+                                                .btn.btn-sm.btn-outline-primary PostgreSQL
+                                                .btn.btn-sm.btn-outline-primary Go
+
+                                    .col-md-6.mb-3.projects
+                                        .card.h-100
+                                            .card-body.p-3
+                                                h2.card-title.text-primary.responsive-text C-Subset Compiler
+                                                p.card-text Compiler that takes a rudimentary C language and outputs Java bytecode. Starts with a lexar, parse tree, and type checking. Translates to an intermediate representation which is translated to a Jasmin file
+                                            .card-footer
+                                                .btn.btn-sm.btn-outline-primary Java
+                                                .btn.btn-sm.btn-outline-primary Antlr
+                                                .btn.btn-sm.btn-outline-primary Jasmin
+
+                                    .col-md-6.mb-3.projects
+                                        .card.h-100
+                                            .card-body.p-3
+                                                i.text-muted.fab.fa-github.float-right.pr-1(onclick="location.href = 'https://github.com/rdbrck/glide'")
+                                                h2.card-title.text-primary.responsive-text Glide: Chrome Extension
+                                                p.card-text An extension that shows you the status of all your concourse.ci builds. Allows you to restart builds without going to the website. 
+                                            .card-footer
+                                                .btn.btn-sm.btn-outline-primary AngularJS
+                                                .btn.btn-sm.btn-outline-primary CSS
+                                                .btn.btn-sm.btn-outline-primary Concourse API
+
+            section.py-5
+                .container.text-center.container-special
+                    h3.mb-4 Here's How To Contact Me
+                    p.lead Thanks for stopping by. If you'd like to talk business please contact me via information from my resume or through LinkedIn. 
+                    a.btn.btn-outline-primary.btn-lg.my-2(href="href='hcaperesume2018.pdf'").text-left Resume
+                    a.btn.btn-outline-primary.btn-lg.my-2.ml-1(href="https://www.linkedin.com/in/heather-cape-58a345a0/").text-left LinkedIn
+        
+        script.
+            function getJob(job) {
+                this.job = { title:"null", date:"null", bullet1:"null", bullet2:"null", bullet3:"null"};
+                switch(job){
+                    case "microsoft":
+                        this.job.title = "Software Engineer";
+                        this.job.date = "August 2018 - Present"
+                        this.job.bullet1 = "Feature development for a customer facing, enterprise website";
+                        this.job.bullet2 = "Focus on turning monolithic services into microservices and building new features in Angular and C#";
+                        break;
+
+                    case "coalition":
+                        this.job.title = "Core Gameplay Engineer";
+                        this.job.date = "September - December 2017"
+                        this.job.bullet1 = "Game development on the Gears of War 5 with C++ and Unreal 4";
+                        this.job.bullet2 = "Working with game designers and technical artists to implement character abilities and upgrades";
+                        break;
+
+                    case "verably":
+                        this.job.title = "Full Stack Developer (Contract)";
+                        this.job.date = "April - August 2017"
+                        this.job.bullet1 = "Feature development in Ninja, Java, and Freemarker for an early startup";
+                        this.job.bullet2 = "Ownership of improving the styling and design of several pages";
+                        break;
+                        
+                    case "redbrick":
+                        this.job.title = "Product Developer";
+                        this.job.date = "May - August 2016"
+                        this.job.bullet1 = "Implemented features by customer request for an analytics web app using Django and Angular";
+                        this.job.bullet2 = "Developed site moderating tools with celery and InfluxDB";
+                        break;
+
+                    case "isolation":
+                        this.job.title = "Software Developer";
+                        this.job.date = "September - December 2014"
+                        this.job.bullet1 = "Developed an AngularJS, TypeScript, and ASP.NET beta project to replace a legacy data-viewing system";
+                        this.job.bullet2 = "Focused on directive based Angular development to future-proof the site for Angular 2.0 and contributed to the 87% Angular test coverage with Karma";
+                        break;
+
+                    case "dynamics":
+                        this.job.title = "System Integration Test Engineer";
+                        this.job.date = "January - April 2014"
+                        this.job.bullet1 = "Wrote a pathfinding algorithm in Python to find possible connections between communicating devices";
+                        this.job.bullet2 = "Executed and wrote formal and informal manual test procedures for applications to be used in out in the military field";
+                        break;
+
+                }
+                console.log(this.job.title);
+                document.getElementById("job-title").innerHTML = this.job.title;
+                document.getElementById("job-date").innerHTML = this.job.date;
+                document.getElementById("job-bullet1").innerHTML = this.job.bullet1;
+                document.getElementById("job-bullet2").innerHTML = this.job.bullet2;
+
+            }
+            this.getJob("microsoft");
+
+        script(src="js/jquery/jquery.min.js")
+        script(src="js/popper/popper.min.js")
+        script(src="js/bootstrap/bootstrap.min.js")

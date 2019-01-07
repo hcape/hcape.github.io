@@ -1,42 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
-    <meta charset="utf-8">
     <title>Heather Cape</title>
-    <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Open+Sans:700" rel="stylesheet">
-      <link rel="icon" href="favicon.ico">
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Heather Cape - Software Engineering Portfolio">
+    <meta name="author" content="Heather Cape">
+    <link href="css/bootstrap/bootstrap-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:600|VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
   <body>
-      
-      
-   <div class="container-outer">
-    <div class="container">
-      <div class="title">
-        <div class="pull-right">
-          <button class="minimize"><span class="fa fa-minus"></span></button>
-          <button class="expand"><span class="fa fa-square-o"></span></button>
-          <button class="times"><span class="fa fa-times"></span></button>
+    <div class="container-fluid">
+      <section class="big">
+        <div class="container">
+          <h2 class="text-primary code-font text-left mb-0">Hi, I am    </h2>
+          <h1 class="header-font text-left responsive-header">Heather Cape.</h1>
+          <h1 class="text-muted text-left responsive-header2">I like to program stuff and make it look pretty</h1>
+          <p class="text-muted text-left responsive-font pt-3">Currently based in Seattle and working at Microsoft.</p><a class="btn btn-outline-primary btn-lg my-2 text-left" href="href='hcaperesume2018.pdf'">Resume</a>
         </div>
-        <h1><div class="icon-my-computer"></div> Heather Cape</h1>
-      </div>
-      <ul class="toolbar">
-        <li><u>F</u>ile</li>
-        <li><u>E</u>dit</li>
-        <li><u>V</u>iew</li>
-        <li><u>H</u>elp</li>
-      </ul>
-      <div class="container-inner">
-        <ul class="icons">
-            <li class="fade-in one"><a href="hcaperesume2018.pdf"><img class="folder" src="folder.png" >Resume</a>
-          <li class="fade-in two"><a href="https://github.com/hcape"><img class="folder" src="folder.png" > Github</a></li>
-          <li class="fade-in three"><a href="https://www.linkedin.com/in/heather-cape-    58a345a0/"><img class="folder" src="folder.png" >LinkedIn</a></li>
-          <li class="fade-in four"><img class="folder" src="folder.png" >Projects</li>
-            <li class="fade-in five"><a href="http://heathercape.crevado.com"><img class="folder" src="folder.png" >Artwork</a></li>
-        </ul>
-      </div>
+      </section>
+      <section class="py-5 big">
+        <div class="container">
+          <h2 class="mb-5 text-center responsive-header2">Here's Where I Worked</h2>
+          <div class="job-toggle row justify-content-center">
+            <div class="col-10">
+              <div class="wrapper text-center">
+                <div class="btn-group jobs btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-lg btn-job active" onclick="getJob(&quot;microsoft&quot;)">
+                    <input type="radio" checked>Microsoft
+                  </label>
+                  <label class="btn btn-lg btn-job" onclick="getJob(&quot;coalition&quot;)">
+                    <input type="radio">The Coalition
+                  </label>
+                  <label class="btn btn-lg btn-job" onclick="getJob(&quot;verably&quot;)">
+                    <input type="radio">Verably
+                  </label>
+                  <label class="btn btn-lg btn-job" onclick="getJob(&quot;redbrick&quot;)">
+                    <input type="radio">Redbrick
+                  </label>
+                  <label class="btn btn-lg btn-job" onclick="getJob(&quot;isolation&quot;)">
+                    <input type="radio">Isolation Network
+                  </label>
+                  <label class="btn btn-lg btn-job" onclick="getJob(&quot;dynamics&quot;)">
+                    <input type="radio">General Dynamics
+                  </label>
+                </div>
+              </div>
+              <div class="job-box p-4">
+                <h2 class="text-left pl-1 text-primary" id="job-title"></h2>
+                <h5 class="text-muted pl-1 text-left" id="job-date"></h5>
+                <ul>
+                  <li class="text-left" id="job-bullet1"></li>
+                  <li class="text-left" id="job-bullet2"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 big">
+        <div class="container text-center">
+          <h2 class="mb-5 text-center responsive-header2">Here's What I Built</h2>
+          <div class="row pb-2 mb-4 justify-content-center">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="card-group">
+                  <div class="col-md-6 mb-3 projects">
+                    <div class="card h-100">
+                      <div class="card-body p-3"><i class="text-muted fas fa-external-link-alt float-right" onclick="location.href = 'http://www.antidose.ca'"></i>
+                        <h2 class="card-title text-primary responsive-text">Antidose</h2>
+                        <p class="card-text">Andoird app to address the opioid overdose crisis. It alerts naloxone carriers to nearby overdoses so they can provide assistance. Best UVic Software Capstone 2017  <i class="fas fa-trophy p-1 text-muted"></i></p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="btn btn-sm btn-outline-primary">Java</div>
+                        <div class="btn btn-sm btn-outline-primary">Go</div>
+                        <div class="btn btn-sm btn-outline-primary">PostgreSQL</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 projects">
+                    <div class="card h-100">
+                      <div class="card-body p-3"><i class="text-muted fab fa-github float-right" onclick="location.href = 'https://github.com/moonshot-trading'"></i>
+                        <h2 class="card-title text-primary responsive-text">Moonshot Trading</h2>
+                        <p class="card-text">Simulated stock trading system with a distributed systems focus. Reached over 12000 transactions per second in an offline network. Included 4 different types of servers and robust audit logging. </p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="btn btn-sm btn-outline-primary">Go</div>
+                        <div class="btn btn-sm btn-outline-primary">PostgreSQL</div>
+                        <div class="btn btn-sm btn-outline-primary">Redis</div>
+                        <div class="btn btn-sm btn-outline-primary">Docker</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 projects">
+                    <div class="card h-100">
+                      <div class="card-body p-3"><i class="text-muted fab fa-github float-right" onclick="location.href = 'https://github.com/BoyangJ/iambelle'"></i>
+                        <h2 class="card-title text-primary responsive-text">I Am Belle</h2>
+                        <p class="card-text">Friendly AI Twitterbot that uses Photo AI to compliment user on their pictures. Hardware component that lights up hearts after any tweet is made. Winner of HackUvic 2017 <i class="fas fa-trophy text-muted p-1"></i></p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="btn btn-sm btn-outline-primary">Python</div>
+                        <div class="btn btn-sm btn-outline-primary">HTML/CSS</div>
+                        <div class="btn btn-sm btn-outline-primary">Clarifai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 projects">
+                    <div class="card h-100">
+                      <div class="card-body p-3"><i class="text-muted fas fa-external-link-alt float-right" onclick="location.href = 'https://clarifly-server.herokuapp.com'"></i><i class="text-muted fab fa-github float-right pr-1" onclick="location.href = 'https://clarifly-server.herokuapp.com'"></i>
+                        <h2 class="card-title text-primary responsive-text">Clarifly</h2>
+                        <p class="card-text">A platform that allows teachers to create a digital room that students can join and post questions in during lectures. Students can upvote questions that they like, and the teacher can can see which topics need the most attentnions. Includes a profanity filter, of course.</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="btn btn-sm btn-outline-primary">VueJs</div>
+                        <div class="btn btn-sm btn-outline-primary">HTML/CSS</div>
+                        <div class="btn btn-sm btn-outline-primary">PostgreSQL</div>
+                        <div class="btn btn-sm btn-outline-primary">Go</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 projects">
+                    <div class="card h-100">
+                      <div class="card-body p-3">
+                        <h2 class="card-title text-primary responsive-text">C-Subset Compiler</h2>
+                        <p class="card-text">Compiler that takes a rudimentary C language and outputs Java bytecode. Starts with a lexar, parse tree, and type checking. Translates to an intermediate representation which is translated to a Jasmin file</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="btn btn-sm btn-outline-primary">Java</div>
+                        <div class="btn btn-sm btn-outline-primary">Antlr</div>
+                        <div class="btn btn-sm btn-outline-primary">Jasmin</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 projects">
+                    <div class="card h-100">
+                      <div class="card-body p-3"><i class="text-muted fab fa-github float-right pr-1" onclick="location.href = 'https://github.com/rdbrck/glide'"></i>
+                        <h2 class="card-title text-primary responsive-text">Glide: Chrome Extension</h2>
+                        <p class="card-text">An extension that shows you the status of all your concourse.ci builds. Allows you to restart builds without going to the website. </p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="btn btn-sm btn-outline-primary">AngularJS</div>
+                        <div class="btn btn-sm btn-outline-primary">CSS</div>
+                        <div class="btn btn-sm btn-outline-primary">Concourse API</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container text-center container-special">
+          <h3 class="mb-4">Here's How To Contact Me</h3>
+          <p class="lead">Thanks for stopping by. If you'd like to talk business please contact me via information from my resume or through LinkedIn. </p><a class="btn btn-outline-primary btn-lg my-2 text-left" href="href='hcaperesume2018.pdf'">Resume</a><a class="btn btn-outline-primary btn-lg my-2 ml-1 text-left" href="https://www.linkedin.com/in/heather-cape-58a345a0/">LinkedIn</a>
+        </div>
+      </section>
     </div>
-</div>
-       
+    <script>
+      function getJob(job) {
+          this.job = { title:"null", date:"null", bullet1:"null", bullet2:"null", bullet3:"null"};
+          switch(job){
+              case "microsoft":
+                  this.job.title = "Software Engineer";
+                  this.job.date = "August 2018 - Present"
+                  this.job.bullet1 = "Feature development for a customer facing, enterprise website";
+                  this.job.bullet2 = "Focus on turning monolithic services into microservices and building new features in Angular and C#";
+                  break;
+      
+              case "coalition":
+                  this.job.title = "Core Gameplay Engineer";
+                  this.job.date = "September - December 2017"
+                  this.job.bullet1 = "Game development on the Gears of War 5 with C++ and Unreal 4";
+                  this.job.bullet2 = "Working with game designers and technical artists to implement character abilities and upgrades";
+                  break;
+      
+              case "verably":
+                  this.job.title = "Full Stack Developer (Contract)";
+                  this.job.date = "April - August 2017"
+                  this.job.bullet1 = "Feature development in Ninja, Java, and Freemarker for an early startup";
+                  this.job.bullet2 = "Ownership of improving the styling and design of several pages";
+                  break;
+                  
+              case "redbrick":
+                  this.job.title = "Product Developer";
+                  this.job.date = "May - August 2016"
+                  this.job.bullet1 = "Implemented features by customer request for an analytics web app using Django and Angular";
+                  this.job.bullet2 = "Developed site moderating tools with celery and InfluxDB";
+                  break;
+      
+              case "isolation":
+                  this.job.title = "Software Developer";
+                  this.job.date = "September - December 2014"
+                  this.job.bullet1 = "Developed an AngularJS, TypeScript, and ASP.NET beta project to replace a legacy data-viewing system";
+                  this.job.bullet2 = "Focused on directive based Angular development to future-proof the site for Angular 2.0 and contributed to the 87% Angular test coverage with Karma";
+                  break;
+      
+              case "dynamics":
+                  this.job.title = "System Integration Test Engineer";
+                  this.job.date = "January - April 2014"
+                  this.job.bullet1 = "Wrote a pathfinding algorithm in Python to find possible connections between communicating devices";
+                  this.job.bullet2 = "Executed and wrote formal and informal manual test procedures for applications to be used in out in the military field";
+                  break;
+      
+          }
+          console.log(this.job.title);
+          document.getElementById("job-title").innerHTML = this.job.title;
+          document.getElementById("job-date").innerHTML = this.job.date;
+          document.getElementById("job-bullet1").innerHTML = this.job.bullet1;
+          document.getElementById("job-bullet2").innerHTML = this.job.bullet2;
+      
+      }
+      this.getJob("microsoft");
+      
+    </script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
   </body>
 </html>
